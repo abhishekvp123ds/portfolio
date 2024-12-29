@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>About Me</h1>
+  </header>
+  <main>
+    <section>
+      <p>Hi, I'm [Your Name]. I specialize in creating predictive models, analyzing complex datasets, and visualizing insights. I love solving real-world problems with data-driven solutions!</p>
+    </section>
+  </main>
+</body>
+</html>

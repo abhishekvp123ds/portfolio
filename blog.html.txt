@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>My Blog</h1>
+    <p>Insights, Tutorials, and Case Studies</p>
+  </header>
+  <main>
+    <article>
+      <h2>How I Built My Portfolio</h2>
+      <p>Published: Dec 29, 2024</p>
+      <p>A step-by-step guide to creating a personal data science portfolio...</p>
+      <a href="#">Read More</a>
+    </article>
+    <article>
+      <h2>Exploring Machine Learning Algorithms</h2>
+      <p>Published: Nov 15, 2024</p>
+      <p>In this post, I dive into the fundamentals of machine learning algorithms...</p>
+      <a href="#">Read More</a>
+    </article>
+  </main>
+</body>
+</html>

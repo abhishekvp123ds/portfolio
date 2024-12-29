@@ -1,0 +1,23 @@
+// Smooth scrolling for navigation links
+document.querySelectorAll('nav a').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+// Dynamic greeting message
+window.addEventListener('DOMContentLoaded', () => {
+  const greeting = document.createElement('p');
+  const hour = new Date().getHours();
+  if (hour < 12) {
+    greeting.textContent = "Good morning! Welcome to my portfolio.";
+  } else if (hour < 18) {
+    greeting.textContent = "Good afternoon! Welcome to my portfolio.";
+  } else {
+    greeting.textContent = "Good evening! Welcome to my portfolio.";
+  }
+  document.body.prepend(greeting);
+});
