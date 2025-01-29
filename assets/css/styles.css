@@ -1,30 +1,98 @@
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    text-align: center;
 }
-header {
-  background: #333;
-  color: #fff;
-  padding: 10px 20px;
-  text-align: center;
+
+/* Navigation Bar */
+nav {
+    background: white;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
 }
+
 nav ul {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
+
 nav ul li {
-  display: inline;
-  margin-right: 15px;
+    margin: 0 15px;
 }
+
 nav ul li a {
-  color: white;
-  text-decoration: none;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
 }
-.project-card {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
+
+nav ul li a:hover {
+    border-bottom: 3px solid red;
+}
+
+/* Header Section */
+header {
+    background: white;
+    padding: 50px;
+}
+
+h1 {
+    color: #3b82f6;
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #3b82f6;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #2563eb;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    background: #fff;
+}
+
+.service {
+    text-align: center;
+    max-width: 300px;
+}
+
+.service img {
+    width: 80px;
+}
+
+.service h3 {
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
 }
