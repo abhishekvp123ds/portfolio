@@ -1,5 +1,6 @@
+/* Global Styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Calibri', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
@@ -8,11 +9,11 @@ body {
 
 /* Navigation Bar */
 nav {
-    background: white;
+    background: black;
     padding: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -23,13 +24,14 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: black;
-    font-weight: 600;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 nav ul li a:hover {
@@ -38,8 +40,8 @@ nav ul li a:hover {
 
 /* Header Section */
 header {
+    padding: 60px 20px;
     background: white;
-    padding: 50px;
 }
 
 h1 {
@@ -50,21 +52,6 @@ h1 {
 h2 {
     font-size: 24px;
     color: #333;
-}
-
-.cta-button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 25px;
-    background-color: #3b82f6;
-    color: white;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.cta-button:hover {
-    background-color: #2563eb;
 }
 
 /* Services Section */
@@ -83,6 +70,7 @@ h2 {
 
 .service img {
     width: 80px;
+    margin-bottom: 10px;
 }
 
 .service h3 {
