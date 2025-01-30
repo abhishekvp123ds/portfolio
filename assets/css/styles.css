@@ -38,35 +38,27 @@ nav ul li a:hover {
     border-bottom: 3px solid red;
 }
 
-/* About Section (Image on Left, Text on Right) */
-.about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    background: #fff;
-}
-
-.about-image img {
-    width: 250px;
-    border-radius: 10px;
-}
-
-.about-text {
-    max-width: 500px;
-    text-align: left;
-    margin-left: 30px;
-}
-
 /* Footer (Translucent Grey with Icons) */
 footer {
     background: rgba(50, 50, 50, 0.8); /* Translucent Grey */
     color: white;
     padding: 20px;
     margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 
-.footer-icon {
+.footer-text {
+    font-size: 16px;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-icons a img {
     width: 30px;
-    margin: 0 10px;
 }
