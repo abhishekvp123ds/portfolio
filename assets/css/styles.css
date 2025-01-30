@@ -12,11 +12,9 @@ body {
     background-color: rgba(200, 200, 200, 0.8);
     padding: 15px;
     text-align: center;
-    display: flex;
-    justify-content: center;
     position: fixed;
-    width: 100%;
     top: 0;
+    width: 100%;
     z-index: 1000;
 }
 
@@ -26,6 +24,7 @@ body {
     font-weight: bold;
     margin: 0 20px;
     font-size: 18px;
+    padding: 10px;
 }
 
 .navbar a:hover {
@@ -36,7 +35,6 @@ body {
 .hero {
     background-color: rgba(200, 200, 200, 0.8);
     padding: 50px 0;
-    margin-top: 70px;
 }
 
 .hero h1 {
@@ -53,7 +51,6 @@ body {
 .skills-container {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     text-align: center;
     margin-top: 30px;
     padding: 20px;
@@ -61,8 +58,9 @@ body {
 
 .skill-box {
     width: 30%;
-    min-width: 200px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .skill-box img {
@@ -71,39 +69,15 @@ body {
     margin-bottom: 10px;
 }
 
-/* About Page */
-.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 50px auto;
-    max-width: 80vw;
-    gap: 20px;
-}
-
-.about-img img {
-    width: 250px;
-    border-radius: 10px;
-    max-width: 100%;
-}
-
-.about-text {
-    width: 50%;
-    text-align: left;
-}
-
 /* Footer */
 .footer {
     background-color: rgba(200, 200, 200, 0.8);
     text-align: center;
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .footer img {
     width: 30px;
-    height: auto;
+    height: 30px;
     margin: 0 10px;
 }
