@@ -38,6 +38,29 @@ nav ul li a:hover {
     border-bottom: 3px solid red;
 }
 
+/* Services Section (Side by Side) */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    background: #fff;
+}
+
+.service {
+    text-align: center;
+    max-width: 300px;
+}
+
+.service img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.service h3 {
+    color: #333;
+}
+
 /* Footer (Translucent Grey with Icons) */
 footer {
     background: rgba(211, 211, 211, 0.8); /* Light Grey with Transparency */
@@ -52,13 +75,4 @@ footer {
 
 .footer-text {
     font-size: 16px;
-}
-
-.footer-icons {
-    display: flex;
-    gap: 10px;
-}
-
-.footer-icons a img {
-    width: 30px;
 }
