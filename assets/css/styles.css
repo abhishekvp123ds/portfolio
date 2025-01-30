@@ -4,23 +4,24 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    background: #6C8AD1; /* Soft Blue Background */
     padding: 50px;
-    gap: 50px;
-    background: #fff;
+    color: white;
 }
 
 .about-left img {
-    width: 250px; /* Ensure Profile Picture is Properly Sized */
+    width: 400px; /* Adjust size */
     border-radius: 10px;
 }
 
 .about-right {
     max-width: 600px;
     text-align: left;
+    padding: 20px;
 }
 
-/* Footer Icons (Reduce Size) */
+/* Footer Icons (Same Size as Home Page) */
 .footer-icons a img {
-    width: 25px; /* Make Icons Same as Home Page */
+    width: 25px; 
     height: auto;
 }
