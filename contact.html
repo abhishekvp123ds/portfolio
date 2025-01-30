@@ -9,42 +9,27 @@
 <body>
 
     <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="#">Get in Touch</a></li>
-        </ul>
-    </nav>
+    <div class="navbar">
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="projects.html">Projects</a> |
+        <a href="contact.html">Get in Touch</a>
+    </div>
 
-    <!-- Contact Form -->
-    <section class="contact">
+    <div class="content">
         <h2>Get in Touch</h2>
-        <form action="mailto:abhishekvp123@yahoo.com" method="post" enctype="text/plain">
-            <label for="name">Name *</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email Address *</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message *</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">SEND</button>
+        <p>If you have a project I can help with, feel free to reach out.</p>
+        <form action="mailto:abhishekvp123@yahoo.com" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
         </form>
-    </section>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Abhishek Vasudevan</p>
-        <a href="https://www.linkedin.com/in/abhishek-vasudevan-209541a1/">
-            <img src="assets/icons/linkedin.png" alt="LinkedIn">
-        </a>
-        <a href="https://www.reddit.com/u/Shakyyyyyyy/s/GcC9nnKbG4">
-            <img src="assets/icons/reddit.png" alt="Reddit">
-        </a>
-    </footer>
+    <div class="footer">
+        © 2024 Abhishek Vasudevan
+    </div>
 
 </body>
 </html>
