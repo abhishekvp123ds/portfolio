@@ -7,9 +7,9 @@ body {
     text-align: center;
 }
 
-/* Navigation Bar */
+/* Navigation Bar (Translucent Grey) */
 nav {
-    background: black;
+    background: rgba(50, 50, 50, 0.8); /* Translucent Grey */
     padding: 15px;
     position: sticky;
     top: 0;
@@ -38,49 +38,35 @@ nav ul li a:hover {
     border-bottom: 3px solid red;
 }
 
-/* Header Section */
-header {
-    padding: 60px 20px;
-    background: white;
-}
-
-h1 {
-    color: #3b82f6;
-    font-size: 42px;
-}
-
-h2 {
-    font-size: 24px;
-    color: #333;
-}
-
-/* Services Section */
-.services {
+/* About Section (Image on Left, Text on Right) */
+.about {
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 50px;
     padding: 50px;
     background: #fff;
 }
 
-.service {
-    text-align: center;
-    max-width: 300px;
+.about-image img {
+    width: 250px;
+    border-radius: 10px;
 }
 
-.service img {
-    width: 80px;
-    margin-bottom: 10px;
+.about-text {
+    max-width: 500px;
+    text-align: left;
+    margin-left: 30px;
 }
 
-.service h3 {
-    color: #333;
-}
-
-/* Footer */
+/* Footer (Translucent Grey with Icons) */
 footer {
-    background: black;
+    background: rgba(50, 50, 50, 0.8); /* Translucent Grey */
     color: white;
     padding: 20px;
     margin-top: 50px;
+}
+
+.footer-icon {
+    width: 30px;
+    margin: 0 10px;
 }
