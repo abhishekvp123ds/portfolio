@@ -8,51 +8,84 @@ body {
 }
 
 /* Navigation Bar */
-nav {
+.navbar {
     background-color: rgba(200, 200, 200, 0.8);
     padding: 15px;
     text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 20px;
-}
-
-nav ul li a {
+.navbar a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    margin: 0 20px;
     font-size: 18px;
 }
 
-nav ul li a:hover {
+.navbar a:hover {
     color: blue;
 }
 
-/* About Me Section */
+.navbar .active {
+    text-decoration: underline;
+    color: red;
+}
+
+/* Hero Section */
+.hero {
+    background-color: rgba(200, 200, 200, 0.8);
+    padding: 50px 0;
+    margin-top: 60px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.hero h2 {
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.skill-box {
+    width: 30%;
+}
+
+.skill-box img {
+    width: 80px;
+    height: auto;
+}
+
+/* About Page */
 .about-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    padding: 50px;
-    gap: 50px;
-    background: #fff;
+    margin: 50px;
 }
 
-.about-left img {
-    width: 250px; /* Ensure Profile Picture is Properly Sized */
+.about-img img {
+    width: 250px;
     border-radius: 10px;
 }
 
-.about-right {
-    max-width: 600px;
+.about-text {
+    margin-left: 30px;
+    width: 50%;
     text-align: left;
 }
 
@@ -61,10 +94,10 @@ nav ul li a:hover {
     background-color: rgba(200, 200, 200, 0.8);
     text-align: center;
     padding: 20px;
+    margin-top: 50px;
 }
 
-/* Footer Icons (Reduce Size) */
-.footer-icons a img {
+.footer img {
+    margin: 0 10px;
     width: 25px;
-    height: auto;
 }
