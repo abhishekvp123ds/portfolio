@@ -1,27 +1,58 @@
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Translucent Grey */
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 /* About Me Section */
 .about-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background: #6C8AD1; /* Soft Blue Background */
     padding: 50px;
-    color: white;
+    gap: 50px;
+    background: #f0f0f0;
+    color: #333;
 }
 
 .about-left img {
-    width: 400px; /* Adjust size */
+    width: 250px;
     border-radius: 10px;
 }
 
 .about-right {
     max-width: 600px;
     text-align: left;
-    padding: 20px;
 }
 
-/* Footer Icons (Same Size as Home Page) */
-.footer-icons a img {
-    width: 25px; 
-    height: auto;
+/* Footer */
+.footer-bar {
+    background-color: rgba(0, 0, 0, 0.7); /* Translucent Grey */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-icons img {
+    width: 20px;
+    margin: 0 10px;
+    vertical-align: middle;
 }
