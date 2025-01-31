@@ -1,103 +1,90 @@
-/* General Styles */
+/* Global Styles */
 body {
-    font-family: Calibri, sans-serif;
+    font-family: 'Calibri', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #f9f9f9;
     text-align: center;
 }
 
-/* Navigation Bar */
-.navbar {
-    background-color: rgba(200, 200, 200, 0.8);
+/* Navigation Bar (Translucent Grey) */
+nav {
+    background: rgba(211, 211, 211, 0.8); /* Light Grey with Transparency */
     padding: 15px;
-    text-align: center;
-    position: fixed;
+    position: sticky;
     top: 0;
-    width: 100%;
     z-index: 1000;
 }
 
-.navbar a {
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    margin: 0 20px;
     font-size: 18px;
 }
 
-.navbar a:hover {
-    color: blue;
+nav ul li a:hover {
+    border-bottom: 3px solid red;
 }
 
-.navbar .active {
-    text-decoration: underline;
-    color: red;
-}
-
-/* Hero Section */
-.hero {
-    background-color: rgba(200, 200, 200, 0.8);
-    padding: 50px 0;
-    margin-top: 60px;
-}
-
-.hero h1 {
-    font-size: 36px;
-    font-weight: bold;
-}
-
-.hero h2 {
-    font-size: 24px;
-    font-weight: lighter;
-}
-
-/* Skills Section */
-.skills-container {
+/* Services Section (FORCING SIDE-BY-SIDE LAYOUT) */
+.services {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+    background: #fff;
+}
+
+.service {
     text-align: center;
-    margin-top: 30px;
-    padding: 20px;
+    width: 30%; /* Ensures Three Columns */
+    min-width: 250px;
 }
 
-.skill-box {
-    width: 30%;
-}
-
-.skill-box img {
+.service img {
     width: 80px;
-    height: auto;
+    margin-bottom: 10px;
 }
 
-/* About Page */
-.about-container {
+.service h3 {
+    color: #333;
+}
+
+/* Footer (Translucent Grey with Icons) */
+footer {
+    background: rgba(211, 211, 211, 0.8); /* Light Grey with Transparency */
+    color: black;
+    padding: 20px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 50px;
+    gap: 15px;
 }
 
-.about-img img {
-    width: 250px;
-    border-radius: 10px;
+.footer-text {
+    font-size: 16px;
 }
 
-.about-text {
-    margin-left: 30px;
-    width: 50%;
-    text-align: left;
+.footer-icons {
+    display: flex;
+    gap: 10px;
 }
 
-/* Footer */
-.footer {
-    background-color: rgba(200, 200, 200, 0.8);
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
-}
-
-.footer img {
-    margin: 0 10px;
-    width: 25px;
+.footer-icons a img {
+    width: 30px;
 }
