@@ -9,32 +9,27 @@ body {
 
 /* Navigation Bar */
 .navbar {
-    background-color: rgba(200, 200, 200, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(200, 200, 200, 0.8); /* Translucent Grey */
     padding: 15px;
     text-align: center;
-}
-
-.navbar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.navbar li {
-    display: inline;
-    margin: 0 20px;
+    z-index: 1000;
 }
 
 .navbar a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    margin: 0 20px;
     font-size: 18px;
 }
 
-.navbar a:hover, .navbar .active {
+.navbar a:hover {
     color: blue;
 }
-
 /* Hero Section */
 .hero {
     background-color: rgba(200, 200, 200, 0.8);
@@ -69,15 +64,14 @@ body {
     height: auto;
 }
 
+
 /* Footer */
 .footer {
-    background-color: rgba(200, 200, 200, 0.8);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(200, 200, 200, 0.8); /* Translucent Grey */
     text-align: center;
     padding: 20px;
-}
-
-.footer img {
-    width: 30px;
-    height: auto;
-    margin: 0 10px;
 }
