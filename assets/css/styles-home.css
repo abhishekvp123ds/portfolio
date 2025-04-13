@@ -1,80 +1,88 @@
-/* General Styles */
+/* Base Styles */
 body {
-    font-family: 'Calibri', sans-serif;
+    font-family: Calibri, sans-serif;
     margin: 0;
     padding: 0;
     background-color: white;
-    text-align: center;
 }
 
-/* NAVIGATION */
-.navbar {
-    background-color: rgba(200, 200, 200, 0.8);
-    padding: 15px 0;
-    position: fixed;
+/* Navigation Bar */
+nav {
+    background-color: rgba(200, 200, 200, 0.8);  /* translucent grey for navbar */
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
     top: 0;
-    width: 100%;
     z-index: 1000;
 }
 
-.navbar a {
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav ul li a {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    margin: 0 25px;
     font-size: 18px;
 }
 
-.navbar a:hover {
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active {
     color: blue;
 }
 
-/* PAGE CONTENT PADDING */
-.page-content {
-    padding-top: 80px; /* prevent overlap with fixed navbar */
-}
-
-/* HEADER SECTION */
+/* Header Section - (No more background gray here) */
 header {
-    padding: 40px 20px;
-    background-color: rgba(200, 200, 200, 0.8);
+    padding: 60px 0;
+    text-align: center;
 }
 
 header h1 {
     font-size: 36px;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 
 header h2 {
-    font-size: 22px;
-    font-weight: normal;
-    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: lighter;
+    margin: 10px 0;
 }
 
 header p {
     font-size: 16px;
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
+    line-height: 1.6;
 }
 
-/* SERVICES SECTION */
+/* Services Section (3 boxes) */
 .services {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding: 50px 5%;
+    padding: 60px 20px;
+    text-align: center;
+    flex-wrap: wrap;
     background-color: white;
 }
 
 .service {
     width: 30%;
+    min-width: 250px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .service img {
     width: 80px;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .service h3 {
@@ -84,27 +92,23 @@ header p {
 
 .service p {
     font-size: 15px;
+    line-height: 1.5;
 }
 
-/* FOOTER SECTION */
+/* Footer Section */
 footer {
-    background-color: rgba(200, 200, 200, 0.8);
-    padding: 20px 0;
-    position: relative;
+    background-color: rgba(200, 200, 200, 0.8);  /* translucent grey for footer */
+    text-align: center;
+    padding: 30px 0;
 }
 
-footer p {
+.footer-text {
     margin-bottom: 10px;
     font-size: 14px;
 }
 
-.footer-icons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.footer-icons img {
+.footer-icons a img {
     width: 30px;
-    height: auto;
+    margin: 0 10px;
+    vertical-align: middle;
 }
