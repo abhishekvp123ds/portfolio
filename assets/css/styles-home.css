@@ -7,15 +7,13 @@ body {
     text-align: center;
 }
 
-/* Navigation Bar */
+/* NAVIGATION */
 .navbar {
-    background-color: rgba(200, 200, 200, 0.8); /* Translucent Grey */
-    padding: 15px;
-    text-align: center;
+    background-color: rgba(200, 200, 200, 0.8);
+    padding: 15px 0;
     position: fixed;
-    width: 100%;
     top: 0;
-    left: 0;
+    width: 100%;
     z-index: 1000;
 }
 
@@ -23,7 +21,7 @@ body {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    margin: 0 20px;
+    margin: 0 25px;
     font-size: 18px;
 }
 
@@ -31,35 +29,41 @@ body {
     color: blue;
 }
 
-/* Header Section */
-.header {
-    padding: 100px 0 50px; /* Space for fixed navbar */
-    text-align: center;
+/* PAGE CONTENT PADDING */
+.page-content {
+    padding-top: 80px; /* prevent overlap with fixed navbar */
 }
 
-.header h1 {
+/* HEADER SECTION */
+header {
+    padding: 40px 20px;
+    background-color: rgba(200, 200, 200, 0.8);
+}
+
+header h1 {
     font-size: 36px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.header h2 {
-    font-size: 24px;
-    font-weight: lighter;
+header h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 10px;
 }
 
-/* Hero Section */
-.hero {
-    background-color: white;
-    padding: 50px 0;
+header p {
+    font-size: 16px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-/* Three Key Sections (Extraction, Manipulation, Visualization) */
+/* SERVICES SECTION */
 .services {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    text-align: center;
-    padding: 40px 10%;
+    padding: 50px 5%;
     background-color: white;
 }
 
@@ -70,33 +74,37 @@ body {
 .service img {
     width: 80px;
     height: auto;
+    margin-bottom: 10px;
 }
 
-/* Footer */
-.footer {
-    background-color: rgba(200, 200, 200, 0.8); /* Translucent Grey */
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.service h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
-.footer img {
-    margin: 0 10px;
-    width: 30px;
+.service p {
+    font-size: 15px;
 }
 
-/* Fix Layout Issues */
-.container {
+/* FOOTER SECTION */
+footer {
+    background-color: rgba(200, 200, 200, 0.8);
+    padding: 20px 0;
+    position: relative;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-icons {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 15px;
 }
 
-/* To Push Content Below Navbar */
-.page-content {
-    margin-top: 60px; /* Adjust based on navbar height */
+.footer-icons img {
+    width: 30px;
+    height: auto;
 }
